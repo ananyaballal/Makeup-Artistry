@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Portfolio - Keerthi Makeup Artistry</title>
+  </head>
+  <body>
+    <nav>
+      <div class="header-container">
+        <img
+          src="assets/images/black logo1.png"
+          alt="Keerthi Makeup Artistry Logo"
+        />
+      </div>
+      <button class="hamburger" aria-label="Open menu">☰</button>
+      <ul class="navigation-menu">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about-us.html">ABOUT</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><a href="contact.html" class="active">CONTACT</a></li>
+      </ul>
+    </nav>
+
+
+<!-- Contact Form Section -->
+<section class="contact-section section">
+  <div class="contact-container">
+    <h1 class="contact-heading">Let's Connect</h1>
+    <p class="contact-subheading">We'd love to hear from you! Fill out the form below to reach out.</p>
+   <form id="contactForm" action="php/submit_contact.php" method="POST">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number">
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="contact-button">Send Message</button>
+    </form>
+    <p id="formMessage" style="margin-top: 10px; text-align: center; font-size: 16px;"></p> <!-- Confirmation message -->
+  </div>
+</section>
+
+    <footer class="footer-section section" id="contact">
+      <div class="footer-container">
+        <h2 class="footer-heading">Get in Touch</h2>
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>Contact Us</h3>
+            <p><strong>Email:</strong> contact@keerthimakeup.com</p>
+            <p><strong>Phone:</strong> +91 98765 43210</p>
+            <p>
+              <strong>Address:</strong> 123 Beauty Lane, Nellore, Andhra
+              Pradesh, India
+            </p>
+          </div>
+          <div class="footer-social">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a
+                href="https://instagram.com/keerthimakeup"
+                target="_blank"
+                class="social-icon"
+              >
+                <img src="assets/images/instagram-icon.png" alt="Instagram" />
+              </a>
+              <a
+                href="https://facebook.com/keerthimakeup"
+                target="_blank"
+                class="social-icon"
+              >
+                <img src="assets/images/facebook-icon.png" alt="Facebook" />
+              </a>
+              <a
+                href="https://pinterest.com/keerthimakeup"
+                target="_blank"
+                class="social-icon"
+              >
+                <img src="assets/images/pinterest-icon.png" alt="Pinterest" />
+              </a>
+            </div>
+          </div>
+          <div class="footer-newsletter">
+            <h3>Newsletter</h3>
+            <p>Stay updated with our latest offers and makeup tips!</p>
+            <div class="newsletter-form">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                aria-label="Email for newsletter"
+              />
+              <button class="newsletter-button">Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Keerthi Makeup Artistry. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
